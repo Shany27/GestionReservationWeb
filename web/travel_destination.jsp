@@ -1,4 +1,5 @@
-<%--
+<%@ page import="org.isj.billetweb.domaine.Voyage" %>
+<%@ page import="java.util.List" %><%--
   Created by IntelliJ IDEA.
   User: cena
   Date: 01/03/2020
@@ -67,7 +68,7 @@
 <!-- where_togo_area_end  -->
 
 
-<div class="popular _places_area">
+<div class="popular_places_area">
     <div class="container">
         <div class="row">
 
@@ -105,7 +106,7 @@
                                         <span class="range">Prix</span>
                                         <div id="slider-range"></div>
                                         <p>
-                                            <input type="text" id="" readonly
+                                            <input type="text" id="amount" readonly
                                                    style="border:0; color:#7A838B; font-weight:400;">
                                         </p>
                                     </div>
@@ -123,150 +124,44 @@
             </div>
             <div class="col-lg-8">
                 <div class="row">
-                    <div class="col-lg-6 col-md-6">
-                        <div class="single_place">
-                            <div class="thumb">
-                                <img src="img/place/dla.png" alt="">
-                                <a href="#" class="prise">6000frs</a>
-                            </div>
-                            <div class="place_info">
-                                <a href="destination_details.jsp"><h3>Douala</h3></a>
-                                <p>Capitale economique du cameroun</p>
-                                <div class="rating_days d-flex justify-content-between">
-                                        <span class="d-flex justify-content-center align-items-center">
-                                             <i class="fa fa-star"></i> 
-                                             <i class="fa fa-star"></i> 
-                                             <i class="fa fa-star"></i> 
-                                             <i class="fa fa-star"></i> 
-                                             <i class="fa fa-star"></i>
-                                        </span>
-                                    <div class="days">
-                                        <i class="fa fa-clock-o"></i>
-                                        <a href="#">5 Days</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6">
-                        <div class="single_place">
-                            <div class="thumb">
-                                <img src="img/place/kribii.jpg" alt="">
-                                <a href="#" class="prise">5000frs</a>
-                            </div>
-                            <div class="place_info">
-                                <a href="destination_details.jsp"><h3>Kribi</h3></a>
-                                <p>Ville touristique</p>
-                                <div class="rating_days d-flex justify-content-between">
-                                        <span class="d-flex justify-content-center align-items-center">
-                                             <i class="fa fa-star"></i> 
-                                             <i class="fa fa-star"></i> 
-                                             <i class="fa fa-star"></i> 
-                                             <i class="fa fa-star"></i> 
-                                             <i class="fa fa-star"></i>
-                                        </span>
-                                    <div class="days">
-                                        <i class="fa fa-clock-o"></i>
-                                        <a href="#">5 Days</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6">
-                        <div class="single_place">
-                            <div class="thumb">
-                                <img src="img/place/yde.jpg" alt="">
-                                <a href="#" class="prise">6000frs</a>
-                            </div>
-                            <div class="place_info">
-                                <a href="destination_details.jsp"><h3>Yaounde</h3></a>
-                                <p>Capitale politique</p>
-                                <div class="rating_days d-flex justify-content-between">
-                                        <span class="d-flex justify-content-center align-items-center">
-                                             <i class="fa fa-star"></i> 
-                                             <i class="fa fa-star"></i> 
-                                             <i class="fa fa-star"></i>
-                                        </span>
-                                    <div class="days">
-                                        <i class="fa fa-clock-o"></i>
-                                        <a href="#">5 Days</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6">
-                        <div class="single_place">
-                            <div class="thumb">
-                                <img src="img/place/limbe.jpg" alt="">
-                                <a href="#" class="prise">5000frs</a>
-                            </div>
-                            <div class="place_info">
-                                <a href="destination_details.jsp"><h3>Limbe</h3></a>
-                                <p>La ville de vos reves</p>
-                                <div class="rating_days d-flex justify-content-between">
-                                        <span class="d-flex justify-content-center align-items-center">
-                                             <i class="fa fa-star"></i> 
-                                             <i class="fa fa-star"></i> 
-                                             <i class="fa fa-star"></i> 
-                                             <i class="fa fa-star"></i>
-                                        </span>
-                                    <div class="days">
-                                        <i class="fa fa-clock-o"></i>
-                                        <a href="#">5 Days</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6">
-                        <div class="single_place">
-                            <div class="thumb">
-                                <img src="img/place/ebol.jpg" alt="">
-                                <a href="#" class="prise">8000frs</a>
-                            </div>
-                            <div class="place_info">
-                                <a href="destination_details.jsp"><h3>Ebolowa</h3></a>
-                                <p>Venez vous n'allez pas etre deçu</p>
-                                <div class="rating_days d-flex justify-content-between">
-                                        <span class="d-flex justify-content-center align-items-center">
-                                             <i class="fa fa-star"></i> 
-                                             <i class="fa fa-star"></i> 
-                                             <i class="fa fa-star"></i> 
-                                             <i class="fa fa-star"></i>
-                                        </span>
-                                    <div class="days">
-                                        <i class="fa fa-clock-o"></i>
-                                        <a href="#">5 Days</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6">
-                        <div class="single_place">
-                            <div class="thumb">
-                                <img src="img/place/mar.jpg" alt="">
-                                <a href="#" class="prise">10000frs</a>
-                            </div>
-                            <div class="place_info">
-                                <a href="destination_details.jsp"><h3>Maroua</h3></a>
-                                <p>United State of America</p>
-                                <div class="rating_days d-flex justify-content-between">
-                                        <span class="d-flex justify-content-center align-items-center">
-                                             <i class="fa fa-star"></i> 
-                                             <i class="fa fa-star"></i> 
-                                             <i class="fa fa-star"></i>
-                                        </span>
-                                    <div class="days">
-                                        <i class="fa fa-clock-o"></i>
-                                        <a href="#">5 Days</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
+                    <%
+                        List<Voyage> listDestinations = (List<Voyage>) session.getAttribute("listDestinations");
+
+                        int nbreVoyages = 0;
+                        int j = 0;
+                        for (Voyage voyage : listDestinations) {
+
+                            j++;
+                            nbreVoyages++;
+
+                            if (nbreVoyages == 1) {
+                                out.println("<div class=\"row\">");
+                            }
+
+                            out.println("<div class=\"col-lg-6 col-md-6\">" +
+                                    "   <div class=\"single_place\">" +
+                                    "       <div class=\"thumb\">" +
+                                    "           <img src=\"img/place/dla.png\" alt=\"\" class=\"img-responsive\">" +
+                                    "           <a href=\"\" alt=\"\" class=\"prise\">" + voyage.getPrix() +
+                                    "       </div>" +
+                                    "       <div class=\"place_info\">" +
+                                    "           <a href=\"destination_details.jsp\">" + voyage.getLieu() +
+                                    "           <p>" + "Ville de reve" + "</p>" +
+                                    "       </div>" +
+                                    "   </div>" +
+                                    "</div> ");
+
+                            if ((nbreVoyages == 2) || (j == listDestinations.size())) {
+                                out.println("</div>");
+                                nbreVoyages = 0;
+                            }
+
+                        }
+
+                    %>
+
+
                 </div>
                 <div class="row">
                     <div class="col-lg-12">
